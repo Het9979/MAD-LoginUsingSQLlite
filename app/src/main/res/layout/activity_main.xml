@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/register"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64sp"
+        android:text="Registration"
+        android:textColor="#ff0000"
+        android:textSize="50sp" />
+
+    <RelativeLayout
+        android:layout_width="340sp"
+        android:layout_height="673sp"
+        android:layout_centerInParent="true">
+
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="138sp"
+            android:layout_height="38sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="107sp"
+            android:layout_marginTop="159sp"
+            android:layout_marginEnd="95sp"
+            android:background="@drawable/rounded_corner_view"
+            android:gravity="center"
+            android:hint="Enter UserName" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="138sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:inputType="textPassword"
+            android:layout_marginTop="39sp"
+            android:layout_marginEnd="94sp"
+            android:background="@drawable/rounded_corner_view"
+            android:gravity="center"
+            android:hint="Enter Password" />
+
+        <EditText
+            android:id="@+id/repassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="44sp"
+            android:inputType="textPassword"
+            android:layout_marginEnd="91sp"
+            android:background="@drawable/rounded_corner_view"
+            android:gravity="center"
+            android:hint="Confirm Password" />
+
+        <Button
+            android:id="@+id/btnsignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/repassword"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="56sp"
+            android:layout_marginTop="86sp"
+            android:background="@drawable/rounded_corner_view"
+            android:text="Register" />
+
+        <Button
+            android:id="@+id/btnsignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnsignup"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-51sp"
+            android:layout_marginEnd="57sp"
+            android:background="@drawable/rounded_corner_view"
+            android:text="SignIn" />
+    </RelativeLayout>
+
+</RelativeLayout>

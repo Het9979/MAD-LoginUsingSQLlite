@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/lgn2phn"
+    android:padding="10sp"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="115dp"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="#ff0000"
+        android:textSize="50sp" />
+
+    <RelativeLayout
+        android:layout_width="196dp"
+        android:layout_height="159dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="232dp">
+
+        <EditText
+            android:id="@+id/username1"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_corner_view"
+            android:gravity="center"
+            android:hint="Enter UserName"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/password1"
+            android:layout_width="142sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="118dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/rounded_corner_view"
+            android:gravity="center"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnsignin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="79sp"
+        android:layout_marginBottom="213dp"
+        android:background="@drawable/rounded_corner_view"
+        android:gravity="center"
+        android:text="Login"
+        android:textSize="35sp" />
+
+</RelativeLayout>
